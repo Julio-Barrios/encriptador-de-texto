@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <img src="./img/alura-logo.png"/>
+        <div class="encrypt">
+            <textarea 
+                name="text" 
+                class="text" 
+                id="text" 
+                cols="30" 
+                rows="10" 
+                placeholder="Ingresa el texto aqui"
+            ></textarea>
+        <div class="instructions">
+            <img src="./img/exclamation-solid.png"/>
+            <p>Solo letras mínusculas y sin acéntos</p>
+        </div>
+            <div class="bottons">
+                <button class="btnEncrypt" type="button" onclick="encrypt()">
+                Encriptar
+                </button>
+                <input 
+                type="button" 
+                class="btnDecrypt"
+                value="Desencriptar" 
+                onclick="decrypt()"/>
+            </div>
+        </div>
+        <div class="encrypted">
+            <img src="img/Muñeco.png" alt="" id="muñeco"/> 
+            <div class="encrypted_Message" id="encrypted_Message">
+                <h2 id="message_Title">Ningún mensaje fue encontrado</h2>
+                <p id="paragraph">Ingrese el texto que deseas encriptar o desencriptar</p>
+                <!--<textarea 
+                name="message" 
+                id="message" 
+                cols="30" 
+                rows="10" 
+                class="message"
+                ></textarea> -->
+            </div>
+        </div>
+    </div>   
+</body>
+    <script src="index.js"
+</html>
+
+/*https://youtu.be/QI4Jaz3gLm4?si=jW5hh2G1u5gvFYip&t=737*/
